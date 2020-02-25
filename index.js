@@ -17,13 +17,9 @@ class Person {
     }
 }
 
-class Teacher {
-    constructor(name,subject) {
-    this.subject = subject;
-    this.name = name;
-    }
-    teach() {
-        console.log (`${this.name}, teaches ${this.subject}.`);
+class Teacher extends Person {
+    teach(subject) {
+        console.log (`${this.name}, teaches ${subject}.`);
     }
 }
 
@@ -36,5 +32,5 @@ Create an object called Teacher derived from the Person class,
 and implement a method called teach which receives a string called subject, and prints it out:
 */
 
-const teacher = new Teacher("Sean", "Web Development");
-teacher.teach();
+const teacher = new Teacher("Sean");
+teacher.teach("Web Development");
