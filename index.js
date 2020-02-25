@@ -34,3 +34,4 @@ and implement a method called teach which receives a string called subject, and 
 
 const teacher = new Teacher("Sean");
 teacher.teach("Web Development");
+
